@@ -253,7 +253,7 @@
     }),
   )
 
-  if ("abstract" in fm and parts.abstract != none) {
+  if (fm.at("abstracts", default: none) != none) {
     pubmatter.show-abstract-block(fm)
   }
 
